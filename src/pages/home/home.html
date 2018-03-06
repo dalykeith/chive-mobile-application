@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Recipes
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let recipe of recipes | async">
+      <ion-item>
+        {{ recipe.text }}
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="removeRecipe(recipe._id)">
+        <ion-icon name="trash"></ion-icon>
+        Delete
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab (click)="addRecipe()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>
