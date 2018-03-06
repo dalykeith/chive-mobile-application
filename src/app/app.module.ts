@@ -3,11 +3,12 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { AppSettings } from './../providers/app-settings/app-settings';
+import { RecipeService } from './../providers/recipe-service/recipe-service';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { AppSettingsProvider } from '../providers/app-settings/app-settings';
-import { RecipeServiceProvider } from '../providers/recipe-service/recipe-service';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     MyApp,
@@ -15,6 +16,8 @@ import { RecipeServiceProvider } from '../providers/recipe-service/recipe-servic
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -25,9 +28,9 @@ import { RecipeServiceProvider } from '../providers/recipe-service/recipe-servic
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AppSettingsProvider,
-    RecipeServiceProvider
+    RecipeService,
+    AppSettings,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
