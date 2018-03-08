@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 const CONFIG = {
-  apiUrl: 'http://127.0.0.1:3001/',
+  apiUrl: 'https://pure-chamber-69214.herokuapp.com/',
 };
 
 @Injectable()
