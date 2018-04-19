@@ -1,8 +1,9 @@
 import { RecipeService } from '../../providers/recipe-service/recipe-service';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { NavController, AlertController, ToastController } from 'ionic-angular';
+import { NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -10,7 +11,7 @@ import { NavController, AlertController, ToastController } from 'ionic-angular';
 export class HomePage {
   recipes: Observable<any>;
 
-  constructor(public navCtrl: NavController, public recipeService: RecipeService, public alertCtrl: AlertController, public toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public recipeService: RecipeService, public alertCtrl: AlertController, public toastCtrl: ToastController) {
     this.loadRecipes();
   }
 
