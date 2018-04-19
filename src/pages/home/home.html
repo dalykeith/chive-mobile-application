@@ -1,6 +1,9 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
+      <ion-fab right>
+        <button ion-fab mini (click)="addRecipe()"><ion-icon name="add"></ion-icon></button>
+      </ion-fab>
       Recipes
     </ion-title>
   </ion-navbar>
@@ -22,7 +25,6 @@
 
   </ion-list>
 
-  <ion-fab right bottom>
-    <button ion-fab (click)="addRecipe()"><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
+
+
 </ion-content>
