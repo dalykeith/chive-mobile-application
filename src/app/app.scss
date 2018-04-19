@@ -14,3 +14,40 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face {
+font-family: 'Otto';
+font-weight: 500;
+font-style: normal;
+src: url('../assets/fonts/Otto/Otto.ttf'),
+url('../assets/fonts/Otto/Otto.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'idolwild';
+font-weight: 500;
+font-style: normal;
+src: url('../assets/fonts/idolwild/idolwild.ttf'),
+url('../assets/fonts/idolwild/idolwild.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'rund';
+font-weight: 500;
+font-style: normal;
+src: url('../assets/fonts/rund/rund.ttf'),
+url('../assets/fonts/rund/rund.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'amatic-bold';
+src: url('../assets/fonts/amatic-bold/amatic-bold.ttf'),
+url('../assets/fonts/amatic-bold/amatic-bold.ttf') format('truetype')
+}
+
+@font-face {
+font-family: 'DUB';
+font-weight: 700;
+src: url('../assets/fonts/DUB/DUB.ttf'),
+url('../assets/fonts/DUB/DUB.ttf') format('truetype')
+}

@@ -38,7 +38,15 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  chive-nav: (
+    base: #5CBC6E,
+    contrast: #FFF9FB
+  ),
+  chive-add: (
+    base: #B0DB99,
+    contrast: #FFF9FB
+  )
 );
 
 
@@ -86,3 +94,8 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+$font-family: "Otto";
+$font-family: "idolwild";
+$font-family: "rund";
+$font-family: "amatic-bold";
+$font-family: "DUB";
