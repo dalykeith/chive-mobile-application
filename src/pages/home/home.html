@@ -13,7 +13,11 @@
   <ion-list>
     <ion-item-sliding *ngFor="let recipe of recipes | async">
       <ion-item (click)="onSelect(recipe)">
-        {{ recipe.title }}
+        <img class="header" src="http://placehold.it/200x200"/>
+        <div class = "align-right">
+        <h1>{{ recipe.title }}</h1>
+        serves {{ recipe.servingSize }}
+      </div>
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="danger" (click)="removeRecipe(recipe._id)">

@@ -45,7 +45,6 @@ export class HomePage {
 
   onSelect(recipe){
     this.navCtrl.push(RecipeDetailsPage, recipe)
-
   }
 
   private showToast(message: string) {

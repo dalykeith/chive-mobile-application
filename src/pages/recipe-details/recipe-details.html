@@ -1,7 +1,7 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Recipe Details</ion-title>
+  <ion-navbar color="chive-nav">
+    <ion-title >Recipe Details</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -14,8 +14,30 @@
             <strong>Title:</strong> {{title}}
         </ion-item>
 
-    </ion-list>
+       <ion-item>
+            <strong>Category:</strong> {{category}}
+        </ion-item>
 
-    <button (click)="book()" full ion-button color="light">Book Now</button>
+         <ion-item>
+            <strong>Prep Time:</strong> {{prepTime}}
+        </ion-item>
+
+        <ion-item>
+            <strong>Cook Time:</strong> {{cookTime}}
+        </ion-item>
+
+        <ion-item>
+            <strong>Serves:</strong> {{servingSize}}
+        </ion-item>
+
+        <ion-item>
+            <strong>Ingredients:</strong> {{ingredients}}
+        </ion-item>
+
+        <ion-item>
+            <strong>Directions:</strong> {{directions}}
+        </ion-item>
+
+    </ion-list>
 
 </ion-content>

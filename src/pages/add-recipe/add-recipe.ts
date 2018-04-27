@@ -8,7 +8,13 @@ import { NavController, NavParams, ViewController, IonicPage } from 'ionic-angul
 })
 export class AddRecipePage {
 
-    title: any;
+    title: string;
+    category: string;
+    prepTime: number;
+    cookTime: number;
+    servingSize: number;
+    ingredients: string;
+    directions: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }
@@ -16,7 +22,13 @@ export class AddRecipePage {
   save(): void {
 
     let recipe = {
-      title: this.title
+      title: this.title,
+      category: this.category,
+      prepTime: this.prepTime,
+      cookTime: this.cookTime,
+      servingSize: this.servingSize,
+      ingredients: this.ingredients,
+      directions: this.directions
     };
 
     this.viewCtrl.dismiss(recipe);
