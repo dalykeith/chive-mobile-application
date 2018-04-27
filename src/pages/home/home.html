@@ -12,8 +12,8 @@
 <ion-content>
   <ion-list>
     <ion-item-sliding *ngFor="let recipe of recipes | async">
-      <ion-item>
-        {{ recipe.text }}
+      <ion-item (click)="onSelect(recipe)">
+        {{ recipe.title }}
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="danger" (click)="removeRecipe(recipe._id)">
@@ -22,9 +22,5 @@
       </button>
       </ion-item-options>
     </ion-item-sliding>
-
   </ion-list>
-
-
-
 </ion-content>

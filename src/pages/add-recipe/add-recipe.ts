@@ -8,7 +8,7 @@ import { NavController, NavParams, ViewController, IonicPage } from 'ionic-angul
 })
 export class AddRecipePage {
 
-    text: any;
+    title: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
   }
@@ -16,7 +16,7 @@ export class AddRecipePage {
   save(): void {
 
     let recipe = {
-      text: this.text
+      title: this.title
     };
 
     this.viewCtrl.dismiss(recipe);

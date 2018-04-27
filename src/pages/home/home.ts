@@ -1,5 +1,6 @@
 import { RecipeService } from '../../providers/recipe-service/recipe-service';
 import { AddRecipePage } from '../add-recipe/add-recipe';
+import { RecipeDetailsPage } from '../recipe-details/recipe-details';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { NavController, NavParams, AlertController, ToastController, ModalController } from 'ionic-angular';
@@ -40,6 +41,11 @@ export class HomePage {
       this.showToast(data.msg);
       this.loadRecipes();
     })
+  }
+
+  onSelect(recipe){
+    this.navCtrl.push(RecipeDetailsPage, recipe)
+
   }
 
   private showToast(message: string) {
