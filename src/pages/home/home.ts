@@ -1,7 +1,8 @@
 import { RecipeService } from '../../providers/recipe-service/recipe-service';
+import { AddRecipePage } from '../add-recipe/add-recipe';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
+import { NavController, NavParams, AlertController, ToastController, ModalController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -11,7 +12,7 @@ import { NavController, NavParams, AlertController, ToastController } from 'ioni
 export class HomePage {
   recipes: Observable<any>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public recipeService: RecipeService, public alertCtrl: AlertController, public toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public recipeService: RecipeService, public alertCtrl: AlertController, public toastCtrl: ToastController, public modalCtrl: ModalController) {
     this.loadRecipes();
   }
 
@@ -20,31 +21,18 @@ export class HomePage {
   }
 
   addRecipe() {
-    let prompt = this.alertCtrl.create({
-      title: 'Add Recipe',
-      message: "Enter the text for your new recipe",
-      inputs: [
-        {
-          name: 'text',
-          placeholder: 'Make Curry'
-        },
-      ],
-      buttons: [
-        {
-          text: 'Cancel'
-        },
-        {
-          text: 'Save',
-          handler: data => {
-            this.recipeService.addRecipe(data.text).subscribe(data => {
+    let modal = this.modalCtrl.create(AddRecipePage);
+
+    modal.onDidDismiss(recipe => {
+      if(recipe){
+        this.recipeService.addRecipe(recipe).subscribe(data => {
               this.showToast(data.msg);
               this.loadRecipes();
             });
-          }
-        }
-      ]
+      }
     });
-    prompt.present();
+
+    modal.present();
   }
 
   removeRecipe(id) {

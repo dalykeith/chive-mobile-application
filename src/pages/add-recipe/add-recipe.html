@@ -1,0 +1,23 @@
+<ion-header>
+ <ion-toolbar transparent>
+  <ion-title>Add Recipe</ion-title>
+  <ion-buttons end>
+    <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+  </ion-buttons>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list no-lines>
+
+    <ion-item>
+      <ion-label floating>Recipe Title</ion-label>
+      <ion-input [(ngModel)]="text" type="text"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button full color="secondary" (click)="save()">Save Recipe</button>
+
+</ion-content>

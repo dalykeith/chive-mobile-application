@@ -16,7 +16,7 @@ export class RecipeService {
   }
 
   public addRecipe(newRecipe) {
-    return this.http.post(this.apiUrl + 'recipes', {'text': newRecipe})
+    return this.http.post(this.apiUrl + 'recipes', newRecipe)
       .map(response => response.json());
   }
 

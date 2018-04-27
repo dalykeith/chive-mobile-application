@@ -1,11 +1,11 @@
 <ion-header>
   <ion-navbar color="chive-nav">
     <ion-title text-center>
-      <ion-fab right>
-        <button ion-fab mini (click)="addRecipe()" color = "chive-add"><ion-icon name="create"></ion-icon></button>
-      </ion-fab>
       Chive Recipe Book
     </ion-title>
+    <ion-buttons end>
+    <button ion-button icon-only (click)="addRecipe()" color = "chive-add"><ion-icon name="add"></ion-icon></button>
+  </ion-buttons>
   </ion-navbar>
 </ion-header>
 

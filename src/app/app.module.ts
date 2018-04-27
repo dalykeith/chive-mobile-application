@@ -7,6 +7,7 @@ import { AppSettings } from './../providers/app-settings/app-settings';
 import { RecipeService } from './../providers/recipe-service/recipe-service';
 import { MyApp } from './app.component';
 import { HomePageModule } from '../pages/home/home.module';
+import { AddRecipePage } from '../pages/add-recipe/add-recipe';
 import { FavouritesPageModule } from '../pages/favourites/favourites.module';
 import { ShoppingListPageModule } from '../pages/shopping-list/shopping-list.module';
 import { AboutPageModule } from '../pages/about/about.module';
@@ -16,7 +17,8 @@ import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    AddRecipePage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { HttpModule } from '@angular/http';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    AddRecipePage
   ],
   providers: [
     StatusBar,
