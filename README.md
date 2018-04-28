@@ -90,7 +90,7 @@ When deciding which technologies to use for the frontend we were faced with two 
 
 https://www.xamarin.com/
 
-or 
+*or*
 
 **Ionic 3 and Angular**
 
@@ -100,12 +100,15 @@ https://ionicframework.com/
 Ultimately we decided on Ionic, this made more sense as we both had prior experience developing with Ionic. Additionally Ionic 3 uses Angular 5, this ended up being a fantastic combination with the MEAN stack.
 
 
-Weeks 1-3 were primarily spent on gathering data, creating a rough skeleton of our project and learning as much about these new technologies as we could. More about this can be found in the design document.
+**Weeks 1-3** were primarily spent on gathering data, creating a rough skeleton of our project and learning as much about these new technologies as we could. More about this can be found in the design document.
 
-Weeks 4-5 involved designing and creating the backend of our app, then connecting it to the frontend locally.
 
-Week 6 took our backend from our computers to being hosted on Heroku. Time was also spent learning about how to get the MongoDB on there. Ultimately we opted for a technology called MLab and managed to deployed it onto Heroku alongside the server and API.
+**Weeks 4-5** involved designing and creating the backend of our app, then connecting it to the frontend locally.
 
-Weeks 7~ In the final weeks of developing our application we worked on establishing a solid user interface for adding recipes.
+
+**Week 6** took our backend from our computers to being hosted on Heroku. Time was also spent learning about how to get the MongoDB on there. Ultimately we opted for a technology called MLab and managed to deployed it onto Heroku alongside the server and API.
+
+
+**Weeks 7~** In the final weeks of developing our application we worked on establishing a solid user interface for adding recipes.
 
 
