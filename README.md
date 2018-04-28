@@ -15,7 +15,7 @@ This project is a hybrid mobile application for both iOS and Android devices dev
 https://nodejs.org/en/download/
 
 
-## How to Run Chive
+## Installation Guide
 
 **1. Install the Ionic CLI and Cordova**
 ```bash
