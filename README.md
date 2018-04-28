@@ -15,7 +15,7 @@ This project is a hybrid mobile application for both iOS and Android devices dev
 https://nodejs.org/en/download/
 
 
-## How to Run The Program
+## How to Run Chive
 
 **1. Install the Ionic CLI and Cordova**
 ```bash
@@ -43,11 +43,8 @@ $ npm install
 ```bash
 $ ionic serve
 ```
-<br>
-<br>
-alternatively
-<br>
-<br>
+
+## How to Run Chive with Ionic View
 
 **1. Ionic View**
 ```bash
@@ -71,9 +68,19 @@ https://blog.ionicframework.com/update-on-ionic-view-for-ios/
 
 ---
 
+
+## How to Run Chive with Ionic View
+
 [Video Demonstration](https://youtu.be/BlfHFeUla3U) of the App running on a mobile device and in browser
 
+
 ---
+
+
+## User Guide
+
+* [User Guide](https://drive.google.com/open?id=1JmS99y8YvKyNVi0hMqiQ5ZiJ0Az5V-ge)
+
 
 ## Planning
 
@@ -88,6 +95,7 @@ or
 **Ionic 3 and Angular**
 
 https://ionicframework.com/
+
 
 Ultimately we decided on Ionic, this made more sense as we both had prior experience developing with Ionic. Additionally Ionic 3 uses Angular 5, this ended up being a fantastic combination with the MEAN stack.
 
