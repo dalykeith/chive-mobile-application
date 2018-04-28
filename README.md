@@ -114,3 +114,14 @@ Ultimately we decided on Ionic, this made more sense as we both had prior experi
 **Weeks 7~** In the final weeks of developing our application we worked on establishing a solid user interface for adding recipes.
 
 ---
+
+
+## Known Limitations
+
+* Aside from the recipe functionality there is not much to the frontend, originally we had plans to implement a user system where users could login and save their recipes to their individual accounts. This idea was mocked up and created in a seperate test Ionic app which used Passport and Tokens (Adapted from https://www.joshmorony.com/creating-role-based-authentication-with-passport-in-ionic-2-part-1/). However on attempt to implement this into our app there were too many bugs to sort out and opted to get the main recipe functionality working instead.
+
+* The recipe details page doesn't save the format of the ingredients and directions when the user inputs them. This is most likely because of the use of *ion-textareas*. Originally this was thought to be a good idea as an area to save a chunk of text. The issue will most likely be resolved by some simple CSS styling and changing ingredients and directions to dynamically populated input areas.
+
+
+
+
