@@ -43,6 +43,57 @@ $ npm install
 ```bash
 $ ionic serve
 ```
+<br>
+<br>
+alternatively
+<br>
+<br>
 
+**1. Ionic View**
+```bash
+If you own an Android device, navigate to the Google Play Store and download the Ionic View app.
+```
+
+**2. Run The App**
+```bash
+Enter in the app code 82d08f4d to preview Chive
+```
+
+
+**Note:**
+> The backend and database are both hosted on Heroku, there is no need to run it locally. 
+  
+Previous users of Ionic may be wondering why we only mentioned Ionic View with Android.
+
+Ionic View was recently **removed** from the App Store - here's why:
+
+https://blog.ionicframework.com/update-on-ionic-view-for-ios/
+
+---
+
+## Planning
+
+When deciding which technologies to use for the frontend we were faced with two main decisions:
+
+**C# and Xamarin:**
+
+https://www.xamarin.com/
+
+or 
+
+**Ionic 3 and Angular**
+
+https://ionicframework.com/
+
+Ultimately we decided on Ionic, this made more sense as we both had prior experience developing with Ionic. Additionally Ionic 3 uses Angular 5, this ended up being a fantastic combination with the MEAN stack.
+
+
+Weeks 1-3 were primarily spent on gathering data, creating a rough skeleton of our project and learning as much about these new technologies as we could. More about this can be found in the design document.
+
+Weeks 4-5 involved designing and creating the backend of our app, then connecting it to the frontend locally.
+
+Week 6 took our backend from our computers to being hosted on Heroku. Time was also spent learning about how to get the MongoDB on there. Ultimately we opted for a technology called MLab and managed to deployed it onto Heroku alongside the server and API.
+
+Weeks 7~ In the final weeks of developing our application we worked on establishing a solid user interface for adding recipes.
 
 
