@@ -15,6 +15,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class PrimaryTabsPage {
 
+  // Four app tabs
   homeRoot = 'HomePage'
   favouritesRoot = 'FavouritesPage'
   shoppingListRoot = 'ShoppingListPage'

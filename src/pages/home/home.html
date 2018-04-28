@@ -11,15 +11,20 @@
 
 <ion-content>
   <ion-list>
+    <!-- loops through array of recipe observables and displays all recipes in the database -->
     <ion-item-sliding *ngFor="let recipe of recipes | async">
+      <!-- Make the list items into clickable / tappable -->
       <ion-item (click)="onSelect(recipe)">
+        <!-- Placeholder image for effect -->
         <img class="header" src="http://placehold.it/200x200"/>
-        <div class = "align-right">
+        <!-- recipe title -->
         <h1>{{ recipe.title }}</h1>
+        <!-- How many the recipe serves -->
         serves {{ recipe.servingSize }}
-      </div>
       </ion-item>
+      <!-- Allows the list item to slide for deletion -->
       <ion-item-options side="right">
+        <!-- Removes the recipe from the list and database with the ID -->
         <button ion-button color="danger" (click)="removeRecipe(recipe._id)">
         <ion-icon name="trash"></ion-icon>
         Delete

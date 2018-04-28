@@ -1,6 +1,6 @@
 {
   "name": "chive",
-  "app_id": "",
+  "app_id": "82d08f4d",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

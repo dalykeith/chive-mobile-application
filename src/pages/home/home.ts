@@ -11,19 +11,27 @@ import { NavController, NavParams, AlertController, ToastController, ModalContro
   templateUrl: 'home.html'
 })
 export class HomePage {
+  // Array of recipe observables
   recipes: Observable<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public recipeService: RecipeService, public alertCtrl: AlertController, public toastCtrl: ToastController, public modalCtrl: ModalController) {
+    // On load, populate the recipes
     this.loadRecipes();
   }
 
+  // Load all recipes
   loadRecipes() {
+    // HTTP get
     this.recipes = this.recipeService.getRecipes();
   }
 
+
   addRecipe() {
+    // Create a modal which directs to the add recipe page
     let modal = this.modalCtrl.create(AddRecipePage);
 
+    // After the user inputs their recipe to the modalCtrl
+    // subscribe the data so the recipe object can be sent to the backend
     modal.onDidDismiss(recipe => {
       if(recipe){
         this.recipeService.addRecipe(recipe).subscribe(data => {
@@ -36,6 +44,7 @@ export class HomePage {
     modal.present();
   }
 
+  // Remove a recipe
   removeRecipe(id) {
     this.recipeService.deleteRecipe(id).subscribe(data => {
       this.showToast(data.msg);
@@ -43,6 +52,7 @@ export class HomePage {
     })
   }
 
+  // Open the recipe details page of the selected recipe object
   onSelect(recipe){
     this.navCtrl.push(RecipeDetailsPage, recipe)
   }

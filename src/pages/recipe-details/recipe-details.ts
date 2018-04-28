@@ -8,6 +8,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RecipeDetailsPage {
 
+  // Recipe variables
   title: any;
   category: any;
   prepTime: any;
@@ -16,6 +17,10 @@ export class RecipeDetailsPage {
   ingredients: any;
   directions: any;
 
+  // onSelect() pushes the navigation to the recipes details page
+  // It also carries the recipe JSON object with it
+  // navParams is used to get the key values of the recipe JSON
+  // These are then stored in class variables to be accessed through data binding in the HTML document
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.title = this.navParams.get('title');
     this.category = this.navParams.get('category');

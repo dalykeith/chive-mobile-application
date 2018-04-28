@@ -9,45 +9,54 @@
 
 <ion-content>
 
+  <!-- List of inputs for the add recipe page -->
   <ion-list>
 
     <ion-item>
       <ion-label floating>Title</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-input [(ngModel)]="title" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Categories</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-input [(ngModel)]="category" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Preparation Time (mins)</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-input [(ngModel)]="prepTime" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Cooking Time (mins)</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-input [(ngModel)]="cookTime" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Serves</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-input [(ngModel)]="servingSize" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label fixed>Ingredients</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-textarea [(ngModel)]="ingredients" type="text" placeholder="Please enter ingredients"></ion-textarea>
     </ion-item>
 
     <ion-item>
       <ion-label fixed>Directions</ion-label>
+      <!-- ngModel ensures two way binding -->
       <ion-textarea [(ngModel)]="directions" type="text" placeholder="Please enter directions"></ion-textarea>
     </ion-item>
 
   </ion-list>
 
+  <!-- Button to save the new recipe -->
   <button fixed ion-button full color="secondary" (click)="save()">Save Recipe</button>
 
 </ion-content>

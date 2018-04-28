@@ -8,6 +8,7 @@ import { NavController, NavParams, ViewController, IonicPage } from 'ionic-angul
 })
 export class AddRecipePage {
 
+    // Recipe object variables
     title: string;
     category: string;
     prepTime: number;
@@ -21,6 +22,9 @@ export class AddRecipePage {
 
   save(): void {
 
+    // Model the recipe as an object
+    // This allows it to be sent back through the view controller
+    // This is then passed and subscribed through a HTTP post request to the server later on
     let recipe = {
       title: this.title,
       category: this.category,
@@ -31,10 +35,12 @@ export class AddRecipePage {
       directions: this.directions
     };
 
+    // Dismiss the modal and return the recipe object
     this.viewCtrl.dismiss(recipe);
 
   }
 
+  // Close the modal
   close(): void {
     this.viewCtrl.dismiss();
   }
