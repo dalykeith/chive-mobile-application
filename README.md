@@ -69,7 +69,7 @@ https://blog.ionicframework.com/update-on-ionic-view-for-ios/
 ---
 
 
-## How to Run Chive with Ionic View
+## Video Demonstration of Chive
 
 [Video Demonstration](https://youtu.be/BlfHFeUla3U) of the App running on a mobile device and in browser
 
