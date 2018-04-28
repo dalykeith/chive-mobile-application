@@ -123,5 +123,12 @@ Ultimately we decided on Ionic, this made more sense as we both had prior experi
 * The recipe details page doesn't save the format of the ingredients and directions when the user inputs them. This is most likely because of the use of *ion-textareas*. Originally this was thought to be a good idea as an area to save a chunk of text. The issue will most likely be resolved by some simple CSS styling and changing ingredients and directions to dynamically populated input areas.
 
 
+## References
+
+- https://ionicframework.com/docs/
+
+- https://www.joshmorony.com/building-a-hotel-booking-app-with-ionic-2-mongodb-node/
+
+- https://www.youtube.com/watch?v=TEdsqRY8210&t=923s
 
 
