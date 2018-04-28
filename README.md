@@ -71,7 +71,7 @@ https://blog.ionicframework.com/update-on-ionic-view-for-ios/
 
 ## Video Demonstration of Chive
 
-[Video Demonstration](https://youtu.be/BlfHFeUla3U) of the App running on a mobile device and in browser
+* [Video Demonstration](https://youtu.be/BlfHFeUla3U)
 
 
 ---
@@ -86,6 +86,7 @@ https://blog.ionicframework.com/update-on-ionic-view-for-ios/
 
 When deciding which technologies to use for the frontend we were faced with two main decisions:
 
+
 **C# and Xamarin:**
 
 https://www.xamarin.com/
@@ -99,6 +100,7 @@ https://ionicframework.com/
 
 Ultimately we decided on Ionic, this made more sense as we both had prior experience developing with Ionic. Additionally Ionic 3 uses Angular 5, this ended up being a fantastic combination with the MEAN stack.
 
+---
 
 **Weeks 1-3** were primarily spent on gathering data, creating a rough skeleton of our project and learning as much about these new technologies as we could. More about this can be found in the design document.
 
@@ -111,4 +113,4 @@ Ultimately we decided on Ionic, this made more sense as we both had prior experi
 
 **Weeks 7~** In the final weeks of developing our application we worked on establishing a solid user interface for adding recipes.
 
-
+---
