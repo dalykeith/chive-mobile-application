@@ -71,6 +71,10 @@ https://blog.ionicframework.com/update-on-ionic-view-for-ios/
 
 ---
 
+[Video Demonstration](https://youtu.be/BlfHFeUla3U) of the App running on a mobile device and in browser
+
+---
+
 ## Planning
 
 When deciding which technologies to use for the frontend we were faced with two main decisions:
